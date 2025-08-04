@@ -26,9 +26,9 @@ USER_REPLY_TEXT = os.environ.get("USER_REPLY_TEXT", "Don't send me messages dire
 #your bot token here from https://telegram.me/BotFather
 TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "") 
 #your api id from https://my.telegram.org/apps
-APP_ID = int(os.environ.get("APP_ID", "24579269"))
+APP_ID = int(os.environ.get("APP_ID", ""))
 #your api hash from https://my.telegram.org/apps
-API_HASH = os.environ.get("API_HASH", "99dff6c471774c2be6ff3d4623a6c0c0")
+API_HASH = os.environ.get("API_HASH", "")
 #your channel_id from https://t.me/MissRose_bot by forwarding dummy message to rose and applying command `/id` in reply to that message
 CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002262951493"))
 #your id of telegram can be found by https://t.me/MissRose_bot with '/id' command
@@ -36,7 +36,7 @@ OWNER_ID = int(os.environ.get("OWNER_ID", "6366880905"))
 #port set to default 8080
 PORT = os.environ.get("PORT", "8080")
 #your database url mongodb only You can use mongo atlas free cloud database
-DB_URL = os.environ.get("DB_URL", "mongodb+srv://dbuser1:sourav34875@cluster0.xdd15fd.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DB_URL = os.environ.get("DB_URL", "")
 #your database name
 DB_NAME = os.environ.get("DB_NAME", "filestorebot")
 
@@ -81,14 +81,14 @@ TUT_VID = os.environ.get("TUT_VID","https://t.me/how_to_download_moviezone/8")
 #put TRUE if you want this feature
 USE_PAYMENT = True if (True if os.environ.get("USE_PAYMENT", "TRUE") == "TRUE" else False) and (USE_SHORTLINK) else False
 #UPI ID
-UPI_ID = os.environ.get("ID", "@orriotel")
+UPI_ID = os.environ.get("ID", "@Ninadavydova1")
 #UPI QR CODE IMAGE
 UPI_IMAGE_URL = os.environ.get("IMAGE_URL", "https://telegra.ph/file/939e6b66661e27c8b4d02.jpg")
 #SCREENSHOT URL of ADMIN for verification of payments
 SCREENSHOT_URL = os.environ.get("SCREENSHOT_URL", f"t.me/{OWNER_TAG}")
 #Time and its price
 #7 Days
-PRICE1 = os.environ.get("PRICE1", "30 tk")
+PRICE1 = os.environ.get("PRICE1", "80 tk")
 #1 Month
 PRICE2 = os.environ.get("PRICE2", "110 tk")
 #3 Month
@@ -142,3 +142,4 @@ logging.basicConfig(
 logging.getLogger("pyrogram").setLevel(logging.WARNING)
 def LOGGER(name: str) -> logging.Logger:
     return logging.getLogger(name)
+
